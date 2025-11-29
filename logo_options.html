@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Options</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 4rem;
+            padding: 2rem;
+        }
+
+        .logo-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            width: 400px;
+        }
+
+        .logo-icon {
+            width: 64px;
+            height: 64px;
+            color: #0f172a;
+            /* Navy */
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0f172a;
+            line-height: 1.2;
+        }
+
+        .label {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .option-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Gradient definition for reference */
+        .teal-accent {
+            color: #008080;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Option 1: Equalizer Skyline -->
+    <div class="option-wrapper">
+        <div class="label">Option 1: The Equalizer Skyline</div>
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bars representing both a city skyline and a frequency equalizer -->
+                <rect x="10" y="60" width="12" height="30" rx="2" fill="#0f172a" />
+                <rect x="26" y="40" width="12" height="50" rx="2" fill="#0f172a" />
+                <rect x="42" y="20" width="12" height="70" rx="2" fill="#008080" />
+                <!-- Teal accent (tallest/center) -->
+                <rect x="58" y="35" width="12" height="55" rx="2" fill="#0f172a" />
+                <rect x="74" y="50" width="12" height="40" rx="2" fill="#0f172a" />
+            </svg>
+            <div class="logo-text">Sound City<br>Ventures</div>
+        </div>
+    </div>
+
+    <!-- Option 2: The Resonant Block -->
+    <div class="option-wrapper">
+        <div class="label">Option 2: The Resonant Block</div>
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6"
+                stroke-linecap="round" stroke-linejoin="round">
+                <!-- Central geometric building block -->
+                <rect x="35" y="35" width="30" height="30" rx="4" fill="#0f172a" stroke="none" />
+
+                <!-- Radiating waves (Sound/Impact) -->
+                <path d="M75 35 A 30 30 0 0 1 75 65" stroke="#008080" />
+                <path d="M85 25 A 45 45 0 0 1 85 75" stroke="#008080" opacity="0.6" />
+
+                <!-- Connection lines/Circuit hint -->
+                <path d="M20 50 L35 50" stroke="#0f172a" />
+            </svg>
+            <div class="logo-text">Sound City<br>Ventures</div>
+        </div>
+    </div>
+
+    <!-- Option 3: The Signal Path -->
+    <div class="option-wrapper">
+        <div class="label">Option 3: The Signal Path</div>
+        <div class="logo-container">
+            <svg class="logo-icon" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <!-- A wave that transforms into a structured step/building -->
+                <path d="M10 50 Q 25 20 40 50 T 70 50" stroke="#008080" /> <!-- Organic wave start -->
+                <path d="M70 50 L 70 30 L 90 30 L 90 70" stroke="#0f172a" /> <!-- Structured digital end -->
+                <circle cx="90" cy="70" r="5" fill="#0f172a" stroke="none" /> <!-- Endpoint node -->
+            </svg>
+            <div class="logo-text">Sound City<br>Ventures</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
